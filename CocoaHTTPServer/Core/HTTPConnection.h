@@ -34,35 +34,34 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @interface HTTPConnection : NSObject
-{
-    dispatch_queue_t connectionQueue;
-    GCDAsyncSocket *asyncSocket;
-    HTTPConfig *config;
-    
-    BOOL started;
-    
-    HTTPMessage *request;
-    unsigned int numHeaderLines;
-    
-    BOOL sentResponseHeaders;
-    
-    NSString *nonce;
-    long lastNC;
-    
-    NSObject<HTTPResponse> *httpResponse;
-    
-    NSMutableArray *ranges;
-    NSMutableArray *ranges_headers;
-    NSString *ranges_boundry;
-    int rangeIndex;
-    
-    UInt64 requestContentLength;
-    UInt64 requestContentLengthReceived;
-    UInt64 requestChunkSize;
-    UInt64 requestChunkSizeReceived;
-  
-    NSMutableArray *responseDataSizes;
-}
+
+@property (nonatomic, readonly) dispatch_queue_t connectionQueue;
+@property (nonatomic, readonly) GCDAsyncSocket *asyncSocket;
+@property (nonatomic, readonly) HTTPConfig *config;
+
+@property (nonatomic, readonly) BOOL started;
+
+@property (nonatomic, readonly) HTTPMessage *request;
+@property (nonatomic, readonly) unsigned int numHeaderLines;
+
+@property (nonatomic, readonly) BOOL sentResponseHeaders;
+
+@property (nonatomic, readonly) NSString *nonce;
+@property (nonatomic, readonly) long lastNC;
+
+@property (nonatomic, readonly) NSObject<HTTPResponse> *httpResponse;
+
+@property (nonatomic, readonly) NSMutableArray *ranges;
+@property (nonatomic, readonly) NSMutableArray *ranges_headers;
+@property (nonatomic, readonly) NSString *ranges_boundry;
+@property (nonatomic, readonly) int rangeIndex;
+
+@property (nonatomic, readonly) UInt64 requestContentLength;
+@property (nonatomic, readonly) UInt64 requestContentLengthReceived;
+@property (nonatomic, readonly) UInt64 requestChunkSize;
+@property (nonatomic, readonly) UInt64 requestChunkSizeReceived;
+
+@property (nonatomic, readonly) NSMutableArray *responseDataSizes;
 
 - (id)initWithAsyncSocket:(GCDAsyncSocket *)newSocket configuration:(HTTPConfig *)aConfig;
 

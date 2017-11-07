@@ -7,24 +7,17 @@
 #define WebSocketDidDieNotification  @"WebSocketDidDie"
 
 @interface WebSocket : NSObject
-{
-    dispatch_queue_t websocketQueue;
-    
-    HTTPMessage *request;
-    GCDAsyncSocket *asyncSocket;
-    
-    NSData *term;
-    
-    BOOL isStarted;
-    BOOL isOpen;
-    BOOL isVersion76;
-    
-    id __unsafe_unretained delegate;
-}
 
 + (BOOL)isWebSocketRequest:(HTTPMessage *)request;
 
 - (id)initWithRequest:(HTTPMessage *)request socket:(GCDAsyncSocket *)socket;
+
+@property (nonatomic, readonly) HTTPMessage *request;
+@property (nonatomic, readonly) GCDAsyncSocket *asyncSocket;
+@property (nonatomic, readonly) NSData *term;
+@property (nonatomic, readonly) BOOL isStarted;
+@property (nonatomic, readonly) BOOL isOpen;
+@property (nonatomic, readonly) BOOL isVersion76;
 
 /**
  * Delegate option.
@@ -32,7 +25,7 @@
  * In most cases it will be easier to subclass WebSocket,
  * but some circumstances may lead one to prefer standard delegate callbacks instead.
 **/
-@property (/* atomic */ unsafe_unretained) id delegate;
+@property (/* atomic */ weak) id delegate;
 
 /**
  * The WebSocket class is thread-safe, generally via it's GCD queue.

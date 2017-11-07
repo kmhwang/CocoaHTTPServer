@@ -118,6 +118,34 @@ static const DDLogLevel httpLogLevel = DDLogLevelWarning; // | HTTP_LOG_FLAG_TRA
 
 @implementation HTTPConnection
 
+@synthesize connectionQueue;
+@synthesize asyncSocket;
+@synthesize config;
+
+@synthesize started;
+
+@synthesize request;
+@synthesize numHeaderLines;
+
+@synthesize sentResponseHeaders;
+
+@synthesize nonce;
+@synthesize lastNC;
+
+@synthesize httpResponse;
+
+@synthesize ranges;
+@synthesize ranges_headers;
+@synthesize ranges_boundry;
+@synthesize rangeIndex;
+
+@synthesize requestContentLength;
+@synthesize requestContentLengthReceived;
+@synthesize requestChunkSize;
+@synthesize requestChunkSizeReceived;
+
+@synthesize responseDataSizes;
+
 static dispatch_queue_t recentNonceQueue;
 static NSMutableArray *recentNonces;
 

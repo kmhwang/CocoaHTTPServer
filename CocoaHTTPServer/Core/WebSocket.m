@@ -177,7 +177,14 @@ static inline NSUInteger WS_PAYLOAD_LENGTH(UInt8 frame)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark Setup and Teardown
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@synthesize request;
+@synthesize asyncSocket;
+@synthesize term;
+@synthesize isStarted;
+@synthesize isOpen;
+@synthesize isVersion76;
 
+@synthesize delegate;
 @synthesize websocketQueue;
 
 - (id)initWithRequest:(HTTPMessage *)aRequest socket:(GCDAsyncSocket *)socket

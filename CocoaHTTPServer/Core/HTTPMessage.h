@@ -14,9 +14,8 @@
 
 
 @interface HTTPMessage : NSObject
-{
-    CFHTTPMessageRef message;
-}
+
+@property (nonatomic, readonly) CFHTTPMessageRef message;
 
 - (id)initEmptyRequest;
 

@@ -7,6 +7,8 @@
 
 @implementation HTTPMessage
 
+@synthesize message;
+
 - (id)initEmptyRequest
 {
     if ((self = [super init]))
