@@ -36,10 +36,10 @@
 		BEFCB25D1FB14FB0008C67A8 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFCB22E1FB14FAF008C67A8 /* HTTPAuthenticationRequest.m */; };
 		BEFCB25E1FB14FB0008C67A8 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFCB2301FB14FAF008C67A8 /* DDNumber.m */; };
 		BEFCB25F1FB14FB0008C67A8 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFCB2311FB14FAF008C67A8 /* DDData.m */; };
-		BEFCB2601FB14FB0008C67A8 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2321FB14FAF008C67A8 /* DDRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEFCB2611FB14FB0008C67A8 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2331FB14FAF008C67A8 /* DDNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEFCB2601FB14FB0008C67A8 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2321FB14FAF008C67A8 /* DDRange.h */; };
+		BEFCB2611FB14FB0008C67A8 /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2331FB14FAF008C67A8 /* DDNumber.h */; };
 		BEFCB2621FB14FB0008C67A8 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFCB2341FB14FAF008C67A8 /* DDRange.m */; };
-		BEFCB2631FB14FB0008C67A8 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2351FB14FAF008C67A8 /* DDData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEFCB2631FB14FB0008C67A8 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2351FB14FAF008C67A8 /* DDData.h */; };
 		BEFCB2641FB14FB0008C67A8 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFCB2361FB14FAF008C67A8 /* HTTPServer.m */; };
 /* End PBXBuildFile section */
 
@@ -195,21 +195,21 @@
 			files = (
 				BEFCB24F1FB14FB0008C67A8 /* HTTPErrorResponse.h in Headers */,
 				BEFCB2451FB14FB0008C67A8 /* HTTPAuthenticationRequest.h in Headers */,
-				BEFCB2611FB14FB0008C67A8 /* DDNumber.h in Headers */,
 				BEFCB24E1FB14FB0008C67A8 /* HTTPDataResponse.h in Headers */,
 				BEFCB2431FB14FB0008C67A8 /* HTTPMessage.h in Headers */,
 				BEFCB2441FB14FB0008C67A8 /* WebSocket.h in Headers */,
 				BEFCB2411FB14FB0008C67A8 /* HTTPConnection.h in Headers */,
-				BEFCB2631FB14FB0008C67A8 /* DDData.h in Headers */,
-				BEFCB2421FB14FB0008C67A8 /* HTTPLogging.h in Headers */,
 				BEFCB2491FB14FB0008C67A8 /* HTTPRedirectResponse.h in Headers */,
 				BEFCB1A01FB14C19008C67A8 /* CocoaHTTPServer.h in Headers */,
 				BEFCB2501FB14FB0008C67A8 /* HTTPFileResponse.h in Headers */,
-				BEFCB2601FB14FB0008C67A8 /* DDRange.h in Headers */,
 				BEFCB2461FB14FB0008C67A8 /* HTTPAsyncFileResponse.h in Headers */,
 				BEFCB2561FB14FB0008C67A8 /* HTTPResponse.h in Headers */,
 				BEFCB2521FB14FB0008C67A8 /* HTTPServer.h in Headers */,
+				BEFCB2421FB14FB0008C67A8 /* HTTPLogging.h in Headers */,
 				BEFCB2511FB14FB0008C67A8 /* HTTPDynamicFileResponse.h in Headers */,
+				BEFCB2611FB14FB0008C67A8 /* DDNumber.h in Headers */,
+				BEFCB2601FB14FB0008C67A8 /* DDRange.h in Headers */,
+				BEFCB2631FB14FB0008C67A8 /* DDData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
