@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BEFCB19A1FB14C19008C67A8"
+               BlueprintIdentifier = "BEFCD36F1FE0138D00A32861"
                BuildableName = "CocoaHTTPServer.framework"
                BlueprintName = "CocoaHTTPServer"
                ReferencedContainer = "container:CocoaHTTPServer.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BEFCB19A1FB14C19008C67A8"
+            BlueprintIdentifier = "BEFCD36F1FE0138D00A32861"
             BuildableName = "CocoaHTTPServer.framework"
             BlueprintName = "CocoaHTTPServer"
             ReferencedContainer = "container:CocoaHTTPServer.xcodeproj">
@@ -65,7 +65,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BEFCB19A1FB14C19008C67A8"
+            BlueprintIdentifier = "BEFCD36F1FE0138D00A32861"
             BuildableName = "CocoaHTTPServer.framework"
             BlueprintName = "CocoaHTTPServer"
             ReferencedContainer = "container:CocoaHTTPServer.xcodeproj">
