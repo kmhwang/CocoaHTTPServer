@@ -31,6 +31,13 @@
 		BEFCD39D1FE0160000A32861 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFCB21C1FB14FAF008C67A8 /* HTTPAsyncFileResponse.m */; };
 		BEFCD39E1FE0160000A32861 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFCB21D1FB14FAF008C67A8 /* HTTPRedirectResponse.m */; };
 		BEFCD39F1FE0160000A32861 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFCB2251FB14FAF008C67A8 /* WebSocket.m */; };
+		BEFCD3A01FE0195000A32861 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2141FB14FAF008C67A8 /* HTTPAuthenticationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEFCD3A11FE0195200A32861 /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2101FB14FAF008C67A8 /* HTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEFCD3A21FE0195500A32861 /* HTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2111FB14FAF008C67A8 /* HTTPLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEFCD3A31FE0195700A32861 /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2121FB14FAF008C67A8 /* HTTPMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEFCD3A41FE0195C00A32861 /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2261FB14FAF008C67A8 /* HTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEFCD3A51FE0196100A32861 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2221FB14FAF008C67A8 /* HTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEFCD3A61FE0197800A32861 /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = BEFCB2131FB14FAF008C67A8 /* WebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,12 +190,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEFCD3A01FE0195000A32861 /* HTTPAuthenticationRequest.h in Headers */,
+				BEFCD3A11FE0195200A32861 /* HTTPConnection.h in Headers */,
+				BEFCD3A21FE0195500A32861 /* HTTPLogging.h in Headers */,
+				BEFCD3A31FE0195700A32861 /* HTTPMessage.h in Headers */,
+				BEFCD3A41FE0195C00A32861 /* HTTPResponse.h in Headers */,
+				BEFCD3A51FE0196100A32861 /* HTTPServer.h in Headers */,
 				BEFCD3811FE0152B00A32861 /* HTTPAsyncFileResponse.h in Headers */,
 				BEFCD3821FE0152D00A32861 /* HTTPRedirectResponse.h in Headers */,
 				BEFCD3831FE0153300A32861 /* HTTPDataResponse.h in Headers */,
 				BEFCD3841FE0153500A32861 /* HTTPErrorResponse.h in Headers */,
 				BEFCD3861FE0153B00A32861 /* HTTPFileResponse.h in Headers */,
 				BEFCD3851FE0153800A32861 /* HTTPDynamicFileResponse.h in Headers */,
+				BEFCD3A61FE0197800A32861 /* WebSocket.h in Headers */,
 				BEFCD3871FE0153F00A32861 /* CocoaHTTPServer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
