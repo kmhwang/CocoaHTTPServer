@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CocoaHTTPServer"
-  s.version      = "3.0"
+  s.version      = "3.0.1"
   s.summary      = "A small, lightweight, embeddable HTTP server for Mac OS X or iOS applications."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    A small, lightweight, embeddable HTTP server for Mac OS X or iOS
+                    A small, lightweight, embeddable HTTP server for Mac OS X or iOS, forked from https://github.com/robbiehanson/CocoaHTTPServer
                    DESC
 
   s.homepage     = "https://github.com/robbiehanson/CocoaHTTPServer"
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/robbiehanson/CocoaHTTPServer.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/kmhwang/CocoaHTTPServer.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -88,9 +88,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "{Core,Extensions}/**/*.{h,m}"
+  s.source_files  = "CocoaHTTPServer/{Core,Extensions}/**/*.{h,m}"
 
-  # s.public_header_files = "Classes/**/*.h"
+  # s.public_header_files = "CocoaHTTPServer/CocoaHTTPServer.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -127,7 +127,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   s.dependency "CocoaAsyncSocket"
